@@ -5,9 +5,7 @@ import streamlit as st
 
 st.title('アヤメの花の判別')
 
-MODEL_PATH = "../practice_iris/model.pkl"
-
-with open(MODEL_PATH, 'rb') as f:
+with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 uploaded_file = st.file_uploader('Choose a file')
