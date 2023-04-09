@@ -2,6 +2,7 @@ import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
+import lightgbm as lgb
 
 st.title('アヤメの花の判別')
 
